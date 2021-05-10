@@ -110,3 +110,50 @@ Processing by LoanappController#initialize_loan_application as HTML
   Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
 Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-10 18:59:41 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2917)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-10 18:59:41 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-10 18:59:41 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-10 18:59:41 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 955)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-10 18:59:41 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-10 18:59:41 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m

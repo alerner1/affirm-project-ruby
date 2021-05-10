@@ -46,3 +46,115 @@ Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 18:41:35 -0400
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:04:05 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:04:05 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:04:05 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:04:05 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:04:05 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:04:05 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:04:29 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:04:29 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:04:29 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:04:29 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:04:30 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:04:30 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:04:32 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:04:33 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:04:33 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:04:33 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:04:33 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:04:33 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:05:25 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:05:25 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:05:25 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:05:25 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:05:25 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:05:25 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:05:28 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:05:29 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:05:29 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:05:29 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:05:29 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:05:29 -0400
+Started POST "/api/v1/merchantconfig/1" for 127.0.0.1 at 2021-05-10 19:08:38 -0400
+  
+SyntaxError (/home/alyssa/code/projects/affirm-backend/ruby/app/controllers/merchant_config_controller.rb:16: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/merchant_config_controller.rb:16: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/merchant_config_controller.rb:16: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/api/v1/merchantconfig/1" for 127.0.0.1 at 2021-05-10 19:08:49 -0400
+Processing by MerchantConfigController#submit_merchant_config as */*
+  Parameters: {"id"=>"1", "merchant_config"=>{}}
+Completed 204 No Content in 7ms (Allocations: 2822)
+
+
+Started POST "/api/v1/merchantconfig/1" for 127.0.0.1 at 2021-05-10 19:09:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as */*
+  Parameters: {"id"=>"1", "merchant_config"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 227)
+
+
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:19:07 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:19:07 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:19:07 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:19:07 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:19:07 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:19:07 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:21:37 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:21:38 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:21:38 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:21:38 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:21:38 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:21:38 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:33:13 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:33:13 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:33:13 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:33:13 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:33:14 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:33:14 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:33:45 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:33:45 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:33:45 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:33:45 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:33:45 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:33:45 -0400
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:34:32 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:34:32 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:34:32 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:34:32 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:34:33 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:34:33 -0400
+Started POST "/api/v1/merchantconfig/1" for ::1 at 2021-05-10 19:34:57 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MerchantConfigController#submit_merchant_config as */*
+  Parameters: {"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true, "id"=>"1", "merchant_config"=>{"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true}}
+Completed 500 Internal Server Error in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3111)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/merchant_config_controller.rb:6:in `submit_merchant_config'
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 19:35:16 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 19:35:16 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 19:35:16 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 19:35:16 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 19:35:16 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 19:35:16 -0400
+Started POST "/api/v1/merchantconfig/1" for ::1 at 2021-05-10 19:35:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as */*
+  Parameters: {"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true, "id"=>"1", "merchant_config"=>{"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 177)
+
+

@@ -234,3 +234,20 @@ paths:
           application/json:
             schema:
               "$ref": "#/components/schemas/CreateLoanApplicationRequest"
+  "/api/v1/merchantconfig/{id}":
+    post:
+      summary: create merchant configuration
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      requestBody:
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/CreateMerchantConfigRequest"
