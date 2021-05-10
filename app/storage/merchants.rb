@@ -1,12 +1,14 @@
 class Merchants
   include Singleton
 
+  # added prequal_enabled boolean to initializer
   def initialize
     zelda_default = MerchantConfiguration.new(
       "4f572866-0e85-11ea-94a8-acde48001122",
       "Zelda's Stationery",
       100.00,
-      3000.00
+      3000.00,
+      false
     )
     @merchants = {"4f572866-0e85-11ea-94a8-acde48001122" => zelda_default}
   end
