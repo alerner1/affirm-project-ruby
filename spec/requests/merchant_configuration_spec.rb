@@ -18,6 +18,16 @@ RSpec.describe 'api/merchantconfig', type: :request do
         end
       end
 
+      response "400", "Bad Request" do 
+        let(:id) { "4f572866-0e85-11ea-94a8-acde48001122" }
+        let(:merchantconfig) { { minimum_loan_amount: 5, maximum_loan_amount: 2, prequal_enabled: 3 } }
+        schema "$ref" => "#/components/schemas/BadInputResponse"
+        run_test! do |response|
+          data = JSON.parse(response.body)
+          expect(data["message"]).to eq("Invalid request.")
+        end
+      end
+
       response "200", "OK" do
         let(:id) { "4f572866-0e85-11ea-94a8-acde48001122" }
         let(:merchantconfig) { { minimum_loan_amount: 2, maximum_loan_amount: 58, prequal_enabled: true } }
