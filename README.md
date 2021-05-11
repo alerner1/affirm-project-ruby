@@ -8,7 +8,7 @@ This implementation involved changes to several different parts of the API. Over
 
   The submit_merchant_config method makes several checks in the process of submitting the merchant's desired configuration.
 
-  1. Get existing merchant configuration from the provided `merchant_id` in the URL. Merchants are initialized with a merchant configuration, so if the `merchant_id` is valid, `Merchants.instance.get_merchant_configuration(merchant_id)`.
+  1. Get existing merchant configuration from the provided `merchant_id` in the URL. Merchants are initialized with a merchant configuration, so if the `merchant_id` is valid, `Merchants.instance.get_merchant_configuration(merchant_id)` will pull that up.
       1. If no merchant configuration exists, respond with a status of `400, "Bad Request"`, and return. 
   2. Create (but don't save) a new instance of the MerchantConfiguration class using the provided parameters. This is necessary for validation purposes, and essentially a substitute for ActiveRecord's built-in `update` method, since we can't use that here.
       1. Check if the new instance would be invalid. If invalid, respond with `400, "Bad Request"` along with the error details. Return.
