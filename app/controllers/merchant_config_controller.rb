@@ -15,7 +15,7 @@ class MerchantConfigController < ApplicationController
     # create a new instance for validation purposes (before updating/saving instance that's already in db). 
     # as far as I can tell this is essentially what ActiveRecord's update method does anyway (to update without saving). 
     new_merchant_conf = MerchantConfiguration.new(merchant_conf.merchant_id, merchant_conf.merchant_name, params[:minimum_loan_amount], params[:maximum_loan_amount], params[:prequal_enabled])
-
+    
     if new_merchant_conf.invalid?
       response = {
         message: "Invalid request."
