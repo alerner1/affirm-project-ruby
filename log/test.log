@@ -3907,3 +3907,4 @@ Processing by MerchantConfigController#submit_merchant_config as HTML
   Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 169)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
