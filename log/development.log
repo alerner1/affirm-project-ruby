@@ -158,3 +158,31 @@ Processing by MerchantConfigController#submit_merchant_config as */*
 Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 177)
 
 
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 23:51:11 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 23:51:11 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 23:51:11 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 23:51:11 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 23:51:11 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 23:51:11 -0400
+Started POST "/api/v1/merchantconfig/1" for ::1 at 2021-05-10 23:51:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as */*
+  Parameters: {"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true, "id"=>"1", "merchant_config"=>{"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true}}
+Completed 500 Internal Server Error in 17ms (Allocations: 2850)
+
+
+  
+NameError (undefined local variable or method `mimetype' for #<MerchantConfigController:0x0000000000e150>):
+  
+app/controllers/merchant_config_controller.rb:10:in `submit_merchant_config'
+Started GET "/api-docs/index.html" for ::1 at 2021-05-10 23:51:57 -0400
+Started GET "/api-docs/swagger-ui.css" for ::1 at 2021-05-10 23:51:57 -0400
+Started GET "/api-docs/swagger-ui-bundle.js" for ::1 at 2021-05-10 23:51:57 -0400
+Started GET "/api-docs/swagger-ui-standalone-preset.js" for ::1 at 2021-05-10 23:51:57 -0400
+Started GET "/api-docs/v1/swagger.yaml" for ::1 at 2021-05-10 23:51:57 -0400
+Started GET "/api-docs/favicon-32x32.png" for ::1 at 2021-05-10 23:51:57 -0400
+Started POST "/api/v1/merchantconfig/1" for ::1 at 2021-05-10 23:52:01 -0400
+Processing by MerchantConfigController#submit_merchant_config as */*
+  Parameters: {"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true, "id"=>"1", "merchant_config"=>{"minimum_amount"=>30000, "maximum_amount"=>200000, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 1.0ms | Allocations: 950)
+
+

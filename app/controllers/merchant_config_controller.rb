@@ -1,10 +1,14 @@
 class MerchantConfigController < ApplicationController
   def submit_merchant_config
-    if params[:id] == "1"
-      render json: {message: 'yup'}, status: :ok
-    else 
-
-      render json: {message: 'hi'}, status: :ok
+    content_type = mimetype = "application/json"
+    merchant_id = params[:id]
+    merchant_conf = Merchants.instance.get_merchant_configuration(merchant_id)
+    if merchant_conf.nil?
+      response = {
+        field: "merchant_id",
+        message: "Could not find that merchant.#{merchant_conf}"
+      }
+      render(json: response, content_type: content_type, mimetype: mimetype, status: :bad_request) && return
     end
     # requires:
     # maximum_loan_amount (int, in cents)
