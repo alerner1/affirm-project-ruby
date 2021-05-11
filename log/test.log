@@ -2479,3 +2479,1285 @@ Processing by MerchantConfigController#submit_merchant_config as HTML
   Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
 Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 277)
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 13:57:20 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1004)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3210)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 13:57:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 423)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 329)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 328)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 314)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 277)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 13:58:58 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 277)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 978)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1071)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:00:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1074)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3069)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:00:45 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2917)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1072)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:01:18 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1007)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:01:30 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 978)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1007)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:02:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1007)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>-2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>-2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 686)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:02:59 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1007)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:03:23 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1071)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 527)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:03:48 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 978)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1123)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3092)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 679)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:05:56 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 177)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1074)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 527)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:07:12 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 978)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1078)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:08:13 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1078)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:08:52 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1075)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 15ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 166)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:09:03 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 158)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1126)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3092)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 679)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:09:21 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 177)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1055)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3092)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 679)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1563)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:10:44 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 177)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1055)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3092)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 679)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>5, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>5}}
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1120)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:05 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 177)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:11:25 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:25 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1055)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3092)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 679)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>5, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>5}}
+Completed 400 Bad Request in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1120)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:11:26 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 177)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1130)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3092)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 679)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>5, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>5}}
+Completed 400 Bad Request in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 989)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:13:09 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 177)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication/abcd/exit" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by LoanappController#submit_exit as HTML
+  Parameters: {"id"=>"abcd", "loanapp"=>{}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>"abcd", "currency"=>"CAD"}}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 979)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"CAD"}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 168)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"abcd", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1058)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"USD"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 903)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/loanapplication" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by LoanappController#initialize_loan_application as HTML
+  Parameters: {"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd", "loanapp"=>{"merchant_id"=>"4f572866-0e85-11ea-94a8-acde48001122", "requested_amount_cents"=>50, "currency"=>"uSd"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/abcd" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"abcd", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 176)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3092)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>-5, "maximum_loan_amount"=>2, "prequal_enabled"=>true}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 679)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>5, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>5}}
+Completed 400 Bad Request in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 989)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>5, "prequal_enabled"=>"enabled", "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>5, "prequal_enabled"=>"enabled"}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 483)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/api/v1/merchantconfig/4f572866-0e85-11ea-94a8-acde48001122" for 127.0.0.1 at 2021-05-11 14:14:17 -0400
+Processing by MerchantConfigController#submit_merchant_config as HTML
+  Parameters: {"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true, "id"=>"4f572866-0e85-11ea-94a8-acde48001122", "merchant_config"=>{"minimum_loan_amount"=>2, "maximum_loan_amount"=>58, "prequal_enabled"=>true}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 177)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m

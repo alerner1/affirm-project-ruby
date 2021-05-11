@@ -18,7 +18,7 @@ class MerchantConfigController < ApplicationController
 
     if new_merchant_conf.invalid?
       response = {
-        errors: new_merchant_conf.errors.full_messages,
+        details: new_merchant_conf.errors.full_messages,
         message: "Invalid request."
       }
       render(json: response, content_type: content_type, mimetype: mimetype, status: :bad_request) && return
