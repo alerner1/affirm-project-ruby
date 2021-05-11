@@ -21,4 +21,10 @@ class MerchantConfigController < ApplicationController
 
     # also needs a merchant_id, obviously
   end
+
+  private
+
+  def merchant_conf_params
+    params.require(:maximum_loan_amount, )
+  end
 end

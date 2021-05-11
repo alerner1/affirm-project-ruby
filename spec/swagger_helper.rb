@@ -133,14 +133,14 @@ RSpec.configure do |config|
           CreateMerchantConfigRequest: {
             type: "object",
             properties: {
-              minimum_amount: {type: :integer, description: "Minimum amount (in cents) that a consumer can get a loan for."},
-              maximum_amount: {type: :integer, description: "Maximum amount (in cents) that a consumer can get a loan for."},
+              minimum_loan_amount: {type: :integer, description: "Minimum amount (in cents) that a consumer can get a loan for."},
+              maximum_loan_amount: {type: :integer, description: "Maximum amount (in cents) that a consumer can get a loan for."},
               prequal_enabled: {type: :boolean, description: "Flag indicating if Prequal feature is enabled for this merchant."}
             },
-            required: ["minimum_amount", "maximum_amount", "prequal_enabled"],
+            required: ["minimum_loan_amount", "maximum_loan_amount", "prequal_enabled"],
             example: {
-              minimum_amount: 30000,
-              maximum_amount: 200000,
+              minimum_loan_amount: 30000,
+              maximum_loan_amount: 200000,
               prequal_enabled: true
             }
           },
