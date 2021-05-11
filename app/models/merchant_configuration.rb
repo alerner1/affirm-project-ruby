@@ -3,6 +3,8 @@
 class MerchantConfiguration
   include ActiveModel::Validations
 
+  attr_accessor :minimum_loan_amount, :maximum_loan_amount, :prequal_enabled
+
   validates :merchant_id, presence: true
   validates :merchant_name, presence: true
   validates :minimum_loan_amount, presence: true, numericality: true
@@ -16,18 +18,6 @@ class MerchantConfiguration
     @merchant_name = merchant_name
     @minimum_loan_amount = minimum_loan_amount
     @maximum_loan_amount = maximum_loan_amount
-    @prequal_enabled = prequal_enabled
-  end
-
-  def minimum_loan_amount=(minimum_loan_amount)
-    @minimum_loan_amount = minimum_loan_amount
-  end
-
-  def maximum_loan_amount=(maximum_loan_amount)
-    @maximum_loan_amount = maximum_loan_amount
-  end
-
-  def prequal_enabled=(prequal_enabled)
     @prequal_enabled = prequal_enabled
   end
 end
