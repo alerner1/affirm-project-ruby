@@ -250,4 +250,4 @@ paths:
         content:
           application/json:
             schema:
-              "$ref": "#/components/schemas/CreateMerchantConfigRequest"
+              "$ref": "#/components/schemas/CreateMerchantConfigResponse"

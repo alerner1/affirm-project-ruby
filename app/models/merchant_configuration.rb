@@ -18,4 +18,16 @@ class MerchantConfiguration
     @maximum_loan_amount = maximum_loan_amount
     @prequal_enabled = prequal_enabled
   end
+
+  def minimum_loan_amount=(minimum_loan_amount)
+    @minimum_loan_amount = minimum_loan_amount
+  end
+
+  def maximum_loan_amount=(maximum_loan_amount)
+    @maximum_loan_amount = maximum_loan_amount
+  end
+
+  def prequal_enabled=(prequal_enabled)
+    @prequal_enabled = prequal_enabled
+  end
 end
