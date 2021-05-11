@@ -10,14 +10,13 @@ class MerchantConfiguration
   validates :merchant_id, presence: true
   validates :merchant_name, presence: true
 
-  # added validator to check that minimum loan amount is less than maximum loan amount
   # added validators to check that loan amounts are both greater than zero 
-  validates :minimum_loan_amount, presence: true, numericality: { less_than_or_equal_to: :maximum_loan_amount, message: "must be less than or equal to maximum loan amount" } 
+  validates :minimum_loan_amount, :maximum_loan_amount, presence: true, numericality: { only_integer: true, greater_than: 0 }
 
-  # need a separate validation line for this because you although you can have multiple helpers for numericality, the custom message will apply to all of them
-  # and specifying numericality twice in the same line makes it skip both validations
-  validates :minimum_loan_amount, numericality: { greater_than: 0 }
-  validates :maximum_loan_amount, presence: true, numericality: { greater_than: 0 }
+  # added validator to check that minimum loan amount is less than maximum loan amount
+  validates :minimum_loan_amount, numericality: { less_than_or_equal_to: :maximum_loan_amount, message: "must be less than or equal to maximum loan amount" } 
+
+  
 
   # added validation for prequal_enabled boolean
   validates :prequal_enabled, presence: true, inclusion: {in: [true, false], message: "must be a boolean"}
