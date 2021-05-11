@@ -7,8 +7,16 @@ RSpec.describe 'api/merchantconfig', type: :request do
       parameter name: :id, in: :path, type: :string
       parameter name: :merchantconfig, in: :body, schema: {"$ref" => "#/components/schemas/CreateMerchantConfigResponse"}
 
-      # response "400", "Bad Request" do
-      # end
+      response "400", "Bad Request" do
+        let(:id) { "abcd" }
+        let(:merchantconfig) { { minimum_loan_amount: 2, maximum_loan_amount: 58, prequal_enabled: true } }
+        schema "$ref" => "#/components/schemas/BadInputResponse"
+        run_test! do |response|
+          data = JSON.parse(response.body)
+          expect(data["field"]).to eq("merchant_id")
+          expect(data["message"]).to eq("Could not find that merchant.")
+        end
+      end
 
       response "200", "OK" do
         let(:id) { "4f572866-0e85-11ea-94a8-acde48001122" }

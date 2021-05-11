@@ -244,6 +244,8 @@ paths:
         schema:
           type: string
       responses:
+        '400':
+          description: Bad Request
         '200':
           description: OK
       requestBody:

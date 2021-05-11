@@ -3,6 +3,8 @@
 class MerchantConfiguration
   include ActiveModel::Validations
 
+  # need to be able to get merchant_id and merchant_name for validation checking
+  attr_reader :merchant_id, :merchant_name
   attr_accessor :minimum_loan_amount, :maximum_loan_amount, :prequal_enabled
 
   validates :merchant_id, presence: true

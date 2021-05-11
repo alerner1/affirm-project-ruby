@@ -11,9 +11,10 @@ class MerchantConfigController < ApplicationController
       }
       render(json: response, content_type: content_type, mimetype: mimetype, status: :bad_request) && return
     end
+    byebug
 
     merchant_conf.update_conf(params[:minimum_loan_amount], params[:maximum_loan_amount], params[:prequal_enabled])
-    
+
     if merchant_conf.minimum_loan_amount == params[:minimum_loan_amount] && merchant_conf.maximum_loan_amount == params[:maximum_loan_amount] && merchant_conf.prequal_enabled == params[:prequal_enabled]
       response = {
         message: "Merchant configuration saved."
