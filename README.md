@@ -6,7 +6,7 @@ This implementation involved changes to several different parts of the API. Over
 
 ### Controller
 
-  The submit_merchant_config method makes several checks in the process while attempting to submit the merchant's desired configuration.
+  The submit_merchant_config method makes several checks in the process of submitting the merchant's desired configuration.
 
   1. Get existing merchant configuration from the provided `merchant_id` in the URL. Merchants are initialized with a merchant configuration, so if the `merchant_id` is valid, `Merchants.instance.get_merchant_configuration(merchant_id)`.
       1. If no merchant configuration exists, respond with a status of `400, "Bad Request"`, and return. 
